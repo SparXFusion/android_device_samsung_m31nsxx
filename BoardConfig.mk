@@ -14,18 +14,18 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a51
+DEVICE_PATH := device/samsung/m31
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a51nsxx,a51xx,a51
+TARGET_OTA_ASSERT_DEVICE := m31,m31xx,m31nsxx
 
 # Kernel
 BOARD_BOOT_HEADER_NAME       := SRPSG30B003KU
-TARGET_KERNEL_CONFIG := exynos9610-a51xx_defconfig
-BOARD_DTBO_CFG := $(DEVICE_PATH)/kernel/a51.cfg
+#TARGET_KERNEL_CONFIG := exynos9610-a51xx_defconfig
+#BOARD_DTBO_CFG := $(DEVICE_PATH)/kernel/a51.cfg
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 61865984
